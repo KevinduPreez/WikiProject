@@ -1,0 +1,28 @@
+{%  include 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        {{ form_start(searchForm) }}
+            {{ form_widget(searchForm ) }}
+        {{ form_end(searchForm) }}
+    </div>
+
+
+    <div class="container">
+        <div class="card" style="width: 20rem;">
+           {# <img src="{{ searchImage }}" class="card-img-top" alt="..."> #}
+            <div class="card-body">
+                <h5 class="card-title">{{ searchTitle }}</h5>
+                <p class="card-text">{{ searchInfo }}</p>
+                <a href="{{ searchUrl }}" class="btn btn-primary">Visit Page</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+{% endblock %}
